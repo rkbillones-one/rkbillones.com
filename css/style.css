@@ -243,3 +243,4 @@ a.contact-card:hover { border-color: var(--teal); transform: translateY(-2px); c
 .page-hero .bi-meta { margin-top: 10px; }
 .related { margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--line); }
 .related h3 { display: flex; align-items: baseline; gap: 8px; }
+[hidden] { display: none !important; }
