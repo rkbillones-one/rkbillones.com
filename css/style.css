@@ -215,3 +215,6 @@ a.contact-card:hover { border-color: var(--teal); transform: translateY(-2px); c
   .grid-4, .contact-grid, .steps, .cred-grid { grid-template-columns: 1fr; }
   .hero { padding: 48px 0 40px; }
 }
+.muted { color: var(--grey); font-size: .92em; }
+.press a { color: var(--teal); }
+.card.side { align-self: start; }
