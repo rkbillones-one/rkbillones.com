@@ -244,3 +244,5 @@ a.contact-card:hover { border-color: var(--teal); transform: translateY(-2px); c
 .related { margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--line); }
 .related h3 { display: flex; align-items: baseline; gap: 8px; }
 [hidden] { display: none !important; }
+.bi-by { font-weight: 600; color: var(--teal); }
+.bi-tag { margin: 4px 0 0; color: var(--grey); font-size: 1rem; }
