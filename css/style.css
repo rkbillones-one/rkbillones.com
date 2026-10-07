@@ -127,8 +127,9 @@ p { margin: 0 0 1em; }
 /* About */
 .about-grid { display: grid; grid-template-columns: 320px 1fr; gap: 56px; align-items: start; }
 .portrait { margin: 0; position: sticky; top: 100px; }
-.portrait img, .portrait-ph { width: 100%; aspect-ratio: 1; border-radius: 14px; object-fit: cover; }
+.portrait-ph { width: 100%; aspect-ratio: 1; border-radius: 14px; object-fit: cover; }
 .portrait-ph { background: var(--mist); display: grid; place-items: center; }
+.portrait img { width: 100%; aspect-ratio: 4 / 5; border-radius: 14px; object-fit: cover; display: block; }
 .prose { max-width: 44em; }
 .prose h2 { font-size: 1.35rem; margin-top: 1.8em; }
 .plain { padding-left: 1.1em; }
@@ -163,7 +164,7 @@ td .sub { display: block; color: var(--grey); font-size: .88rem; margin-top: 3px
 .links li { border-bottom: 1px solid var(--line); }
 .links a { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; text-decoration: none; font-weight: 600; }
 .links svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; }
-.contact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 28px; }
+.contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 28px; }
 .contact-card { display: flex; flex-direction: column; gap: 4px; text-decoration: none; color: var(--ink); transition: border-color .15s, transform .15s; }
 a.contact-card:hover { border-color: var(--teal); transform: translateY(-2px); color: var(--ink); }
 .contact-card svg { width: 30px; height: 30px; fill: none; stroke: var(--teal); stroke-width: 1.8; margin-bottom: 10px; }
@@ -218,3 +219,12 @@ a.contact-card:hover { border-color: var(--teal); transform: translateY(-2px); c
 .muted { color: var(--grey); font-size: .92em; }
 .press a { color: var(--teal); }
 .card.side { align-self: start; }
+.article-list { list-style: none; padding: 0; margin: 0 0 8px; display: grid; gap: 14px; }
+.article-list li { border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px; background: #fff; display: grid; gap: 4px; }
+.article-list a { text-decoration: none; }
+.article-list strong { font-size: 1.05rem; }
+.byline { color: var(--grey); font-size: .95rem; margin-top: 10px; }
+.eyebrow a { color: inherit; text-decoration: none; }
+.article p, .article li { line-height: 1.7; }
+.article .source { margin: 32px 0 20px; padding: 20px 22px; }
+.article .source h3 { margin: 0 0 6px; font-size: 1rem; }
