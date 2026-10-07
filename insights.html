@@ -42,8 +42,11 @@
 <section class="section">
   <div class="wrap two-col wide">
     <div>
-      <h2>Articles</h2>
-      <ul class="article-list"><li><a href="ai-last-mile-is-a-people-problem.html"><strong>AI’s last mile is a people problem</strong></a><span>What a five-layer map of the AI value chain tells Philippine companies, agencies and universities about where AI projects really stall.</span><span class="muted">October 2026</span></li><li><a href="universities-and-ai-governance.html"><strong>Universities should lead on AI governance, not wait for it</strong></a><span>Six principles and eight actions for higher education institutions, from a white paper I co-led for the Asia-Europe Foundation, and how to start this year.</span><span class="muted">October 2026</span></li></ul>
+      <div class="bi-head"><span class="bi-mark">billion insights<span class="bi-dot"></span></span><p class="muted">Articles on AI, industry and governance by Dr. Robert Kerwin C. Billones</p></div>
+      <div class="bi-filter" role="group" aria-label="Filter articles by service line"><button type="button" class="chip is-on" data-f="all">All</button><button type="button" class="chip" data-f="str">Technology Strategy and Digital Policy</button><button type="button" class="chip" data-f="iai">Industrial AI and Data</button><button type="button" class="chip" data-f="amr">Advanced Manufacturing and Robotics</button><button type="button" class="chip" data-f="ais">AI Applications and Systems</button></div>
+      <ul class="article-list" id="bi-list"><li data-tags="str iai ais"><a href="ai-last-mile-is-a-people-problem.html"><strong>AI’s last mile is a people problem</strong></a><span>What a five-layer map of the AI value chain tells Philippine companies, agencies and universities about where AI projects really stall.</span><span class="bi-meta"><time>October 7, 2026</time><a class="tag" href="insights.html#str">Technology Strategy and Digital Policy</a><a class="tag" href="insights.html#iai">Industrial AI and Data</a><a class="tag" href="insights.html#ais">AI Applications and Systems</a></span></li><li data-tags="str"><a href="universities-and-ai-governance.html"><strong>Universities should lead on AI governance, not wait for it</strong></a><span>Six principles and eight actions for higher education institutions, from a white paper I co-led for the Asia-Europe Foundation, and why they matter even more after 2026’s governance developments.</span><span class="bi-meta"><time>October 7, 2026</time><a class="tag" href="insights.html#str">Technology Strategy and Digital Policy</a></span></li></ul>
+      <p class="muted bi-empty" id="bi-empty" hidden>No articles in this service line yet.</p>
+      <script>(function(){var b=document.querySelectorAll('.bi-filter .chip'),l=document.querySelectorAll('#bi-list li'),e=document.getElementById('bi-empty');function f(k){var n=0;b.forEach(function(x){x.classList.toggle('is-on',x.dataset.f===k)});l.forEach(function(li){var s=k==='all'||(' '+li.dataset.tags+' ').indexOf(' '+k+' ')>-1;li.hidden=!s;if(s)n++});e.hidden=n>0}b.forEach(function(x){x.addEventListener('click',function(){f(x.dataset.f);history.replaceState(null,'',x.dataset.f==='all'?location.pathname:'#'+x.dataset.f)})});var h=location.hash.slice(1);if(h&&document.querySelector('.bi-filter [data-f="'+h+'"]'))f(h)})();</script>
       <h2>Recent publications</h2>
       <ul class="ticks"><li><a href="https://doi.org/10.3390/technologies13090421" rel="noopener">AI Ecosystem and Value Chain: A Multi-Layered Framework for Analyzing Supply, Value Creation, and Delivery Mechanisms</a> <span class="muted">(Technologies, 2025)</span></li><li><a href="https://doi.org/10.3390/smartcities8050146" rel="noopener">Digital Twinning Mechanism and Building Information Modeling for a Smart Parking Management System</a> <span class="muted">(Smart Cities, 2025)</span></li><li><a href="https://ieeexplore.ieee.org/document/11206345" rel="noopener">Semantic Segmentation using Sentinel-1 SAR Time Series: A Temporal Convolutional Network Approach</a> <span class="muted">(IEEE Access, 2025)</span></li><li><a href="https://doi.org/10.1109/ACCESS.2024.3493774" rel="noopener">Multi-Objective Linear Programming for Optimizing a Local Energy Community DC Microgrid System and Business Model</a> <span class="muted">(IEEE Access, 2024)</span></li><li><a href="https://asef.org/publications/asefinnolab-white-paper-governance/" rel="noopener">White Paper for Universities on Navigating AI Innovation Ecosystems in the Area of AI Governance</a> <span class="muted">(ASEFInnoLab / Asia-Europe Foundation, 2025)</span></li></ul>
       <h2>Industrial AI publications</h2>
@@ -83,7 +86,7 @@
     <div>
       <h2 class="footer-h">Contact</h2>
       <ul class="contact-list">
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg><a href="mailto:consulting@rkbillones.com">consulting@rkbillones.com</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg><a href="mailto:ask@rkbillones.com">ask@rkbillones.com</a></li>
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-6.2-6.5-11a6.5 6.5 0 0 1 13 0c0 4.8-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><span>Metro Manila, Philippines</span></li>
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5v6M8 7.6v.1M11.5 16.5v-6M11.5 13c0-1.7 1-2.6 2.4-2.6s2.1.9 2.1 2.6v3.5"/></svg><a href="https://www.linkedin.com/in/robert-kerwin-billones-70526b146" rel="noopener">LinkedIn</a></li>
       </ul>
@@ -94,7 +97,7 @@
     </div>
   </div>
   <div class="wrap footer-base">
-    <p>&copy; <span id="yr">2026</span> Robert Kerwin C. Billones, Ph.D.. Independent consulting practice. Work for ISI Inc. and De La Salle University is described as experience in those roles.</p>
+    <p>&copy; <span id="yr">2026</span> Robert Kerwin C. Billones, Ph.D.. This website presents my professional background and personal practice. Roles at ISI Inc. and De La Salle University are described as professional experience.</p>
   </div>
 </footer>
 <script>
