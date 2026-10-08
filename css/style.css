@@ -228,6 +228,8 @@ a.contact-card:hover { border-color: var(--teal); transform: translateY(-2px); c
 .article p, .article li { line-height: 1.7; }
 .article .source { margin: 32px 0 20px; padding: 20px 22px; }
 .article .source h3 { margin: 0 0 6px; font-size: 1rem; }
+.article .src-list { margin: 0; padding-left: 18px; }
+.article .src-list li { margin: 6px 0; }
 .bi-head { margin: 0 0 18px; }
 .bi-head p { margin: 4px 0 0; }
 .bi-mark { font-weight: 700; font-size: 1.9rem; letter-spacing: -0.02em; color: var(--navy); text-transform: lowercase; display: inline-flex; align-items: baseline; text-decoration: none; }
