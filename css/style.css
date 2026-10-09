@@ -257,3 +257,12 @@ a.contact-card:hover { border-color: var(--teal); transform: translateY(-2px); c
 .media-cap { margin-top: 12px; font-size: .95rem; color: var(--grey); max-width: 70ch; }
 .media-cap a { color: var(--teal); }
 @media (max-width: 720px) { .media-figs { grid-template-columns: 1fr; } }
+/* insights hero mark + contact inquiries */
+.bi-hero { font-size: inherit; }
+.inq-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.inq-grid li { background: #fff; border: 1px solid var(--line, #e3e8ee); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px; }
+.inq-links { margin: auto 0 0; padding-top: 6px; font-size: .9rem; }
+.inq-grid strong { font-size: 1.05rem; }
+.inq-grid span { color: var(--grey); }
+.inq-grid a { color: var(--teal); }
+@media (max-width: 720px) { .inq-grid { grid-template-columns: 1fr; } }
