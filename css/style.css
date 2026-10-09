@@ -248,3 +248,12 @@ a.contact-card:hover { border-color: var(--teal); transform: translateY(-2px); c
 [hidden] { display: none !important; }
 .bi-by { font-weight: 600; color: var(--teal); }
 .bi-tag { margin: 4px 0 0; color: var(--grey); font-size: 1rem; }
+
+/* media feature (track record) */
+.media-feature { margin-top: 36px; }
+.media-figs { display: grid; grid-template-columns: 1.92fr 1.45fr; gap: 16px; align-items: start; }
+.media-figs figure { margin: 0; }
+.media-figs img { width: 100%; height: auto; border-radius: 12px; display: block; }
+.media-cap { margin-top: 12px; font-size: .95rem; color: var(--grey); max-width: 70ch; }
+.media-cap a { color: var(--teal); }
+@media (max-width: 720px) { .media-figs { grid-template-columns: 1fr; } }
