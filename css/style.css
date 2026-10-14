@@ -268,3 +268,17 @@ a.contact-card:hover { border-color: var(--teal); transform: translateY(-2px); c
 @media (max-width: 720px) { .inq-grid { grid-template-columns: 1fr; } }
 
 @media (max-width: 1120px) { .brand-name { display: none; } }
+/* article authors */
+.article .authors { margin: 20px 0; padding: 22px; }
+.article .authors h3 { margin: 0 0 14px; font-size: 1rem; }
+.au { display: grid; grid-template-columns: 72px 1fr; gap: 16px; align-items: start; }
+.au + .au { margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--line); }
+.au-ph img, .au-initials { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; object-position: top; display: block; }
+.au-initials { background: var(--mist); color: var(--navy); display: grid; place-items: center; font-weight: 700; }
+.au p { margin: 0; }
+.au-name { font-weight: 700; color: var(--navy); }
+.au-role { font-size: .9rem; color: var(--grey); margin-top: 2px !important; }
+.au-bio { font-size: .95rem; margin-top: 8px !important; }
+.au-links { font-size: .9rem; margin-top: 8px !important; }
+.au-links a { color: var(--teal); }
+@media (max-width: 520px) { .au { grid-template-columns: 56px 1fr; } .au-ph img, .au-initials { width: 56px; height: 56px; } }
